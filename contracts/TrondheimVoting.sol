@@ -12,6 +12,7 @@ contract TrondheimVoting {
 	address public owner;
 
 	struct votingOption {
+		uint timesVoted;
 		bool isVotingOption;
 		string name;
 		string description;
@@ -31,5 +32,14 @@ contract TrondheimVoting {
 		require(msg.sender == owner);
 		votingOptions[sendMoneyTo].isVotingOption = true;
 		votingOptions[sendMoneyTo].name = name;
+		votingOptions[sendMoneyTo].timesVoted = 0;
 	}
+
+	function vote(address optionToVoteFor) {
+		require(voters[msg.sender].registrered == true && voters[msg.sender].voted == false);
+		voters[msg.sender].voted = true;
+		votingOptions[optionToVoteFor].timesVoted += 1;
+	}
+
+
 }
