@@ -1,0 +1,47 @@
+{
+  "contract_name": "TrondheimVoting",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "voter",
+          "type": "address"
+        }
+      ],
+      "name": "addVoter",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60018054600160a060020a03191633600160a060020a03161790555b5b6101568061003c6000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416638da5cb5b8114610048578063f4ab9adf14610084575b600080fd5b341561005357600080fd5b61005b6100b2565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561008f57600080fd5b6100b073ffffffffffffffffffffffffffffffffffffffff600435166100ce565b005b60015473ffffffffffffffffffffffffffffffffffffffff1681565b6001543373ffffffffffffffffffffffffffffffffffffffff9081169116146100f657600080fd5b73ffffffffffffffffffffffffffffffffffffffff81166000908152602081905260409020805460ff191660011790555b505600a165627a7a72305820765620dec42a14a3f5ec873d7945c62ffaa304a4eafea8c3a100ca62909c96500029",
+  "networks": {
+    "1506618464745": {
+      "events": {},
+      "links": {},
+      "address": "0x903d0891a7ecdef66b054e8a64d6e07b09e7a407",
+      "updated_at": 1506618510491
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506618510491
+}

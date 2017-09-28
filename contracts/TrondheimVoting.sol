@@ -16,7 +16,6 @@ contract TrondheimVoting {
 
 	function addVoter(address voter) {
 		require(msg.sender == owner);
-		if (msg.sender != owner) { throw; }
 		voters[voter].registrered = true;
 	}
 }
