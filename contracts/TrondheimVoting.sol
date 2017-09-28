@@ -13,7 +13,7 @@ contract TrondheimVoting {
 
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
-	function MetaCoin() {
+	function TrondheimVoting() {
 		owner = msg.sender;
 	}
 
